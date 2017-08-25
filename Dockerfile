@@ -11,4 +11,4 @@ ENV LOGLEVEL "info"
 
 ADD files/GeoLite2-City.mmdb files/GeoLite2-Country.mmdb files/ipd /app/
 
-CMD /app/ipd --log-level=${LOGLEVEL} --country-db=/app/GeoLite2-Country.mmdb --city-db=/app/GeoLite2-City.mmdb --listen=:${PORT} --template=/app/index.html ${ADDOPTS} > /dev/stdout
+CMD /app/ipd --log-level=${LOGLEVEL} --country-db=/app/GeoLite2-Country.mmdb --city-db=/app/GeoLite2-City.mmdb --listen=:${PORT} --template=/app/index.html --reverse-lookup ${ADDOPTS}
