@@ -5,11 +5,11 @@ LABEL version "1.0"
 
 ENV DOMAIN "localhost"
 ENV BASEDIR "/app/www"
-ENV PORT "80"
+ENV PORT "8888"
 ENV ADDOPTS ""
 ENV LOGLEVEL "debug"
 
-ADD files/GeoLite2-City.mmdb files/GeoLite2-Country.mmdb files/ipd /app/
+ADD files/GeoLite2-City.mmdb files/GeoLite2-Country.mmdb files/ipd files/index.html /app/
 
 USER nobody
 
