@@ -4,7 +4,7 @@ LABEL maintainer "Frederico Freire Boaventura <frederico@boaventura.net>"
 LABEL version "1.0"
 
 ENV DOMAIN "localhost"
-ENV BASEDIR "/app/www"
+ENV BASEDIR "/app"
 ENV PORT "8888"
 ENV ADDOPTS ""
 ENV LOGLEVEL "debug"
